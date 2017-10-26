@@ -1,0 +1,1 @@
+STUDYID	EventType	in_dttm	out_dttm	adt_department_id	adt_department_name	adt_room_id	adt_room_nm_wid	adt_loc_name

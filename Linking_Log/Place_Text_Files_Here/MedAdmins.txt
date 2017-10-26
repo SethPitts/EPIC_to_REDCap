@@ -1,0 +1,1 @@
+STUDYID	ORDER_MED_ID	MEDICATION_ID	TimeActionTaken	ActionTaken	MAR_ORIG_DUE_TM	SCHEDULED_TIME	Dose	AdminSite	INFUSION_RATE	InfusionRateUnit	DurationToInfuse	Duration_Infuse_Unit

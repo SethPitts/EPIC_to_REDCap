@@ -1,0 +1,1 @@
+STUDYID	MEDICATION_ID	display_name	MedIndexName	TimeOrdered	MedRoute	Dose	MedUnit	MIN_DISCRETE_DOSE	THERACLASS	PHARMCLASS	PHARMSUBCLASS	OrderSTatus	OrderClass	OrderingMode	ORDER_MED_ID
