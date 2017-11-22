@@ -1,6 +1,7 @@
 from .datapull_sql import arrival_date_time, discharge_date_time
 from .datapullclasses import ADT
 
+
 def get_arrival_info(coordinator, redcap_label, redcap_raw, subject_id, conn):
     """Stores subjects arrival info in dictionaies to use for file writing
     Args:

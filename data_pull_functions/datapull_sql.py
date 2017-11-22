@@ -1,6 +1,7 @@
 import sqlite3
 
 # TODO: Combine the arrival date and time into one pull
+
 def arrival_date_time(subject_id, conn):
     """Gets arrival date and time from the demographics table
     Args:
@@ -64,6 +65,13 @@ def discharge_date_time(subject_id, conn):
 
 
 def generic_pull(conn, sql, pull_name):
+    """
+    Generic sql pull when no special methods need to be applied
+    :param conn: connection to database
+    :param sql: sql to execute on database
+    :param pull_name: name of pull to execute
+    :return: iterator containing tuples of data pull from executed sql, name of the sql pull
+    """
     print('Running Sql for {}'.format(pull_name))
     cur = conn.cursor()
     cur.execute(sql)

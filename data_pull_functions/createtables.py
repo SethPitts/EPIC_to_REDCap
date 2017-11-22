@@ -38,6 +38,12 @@ def create_table(conn, table_title, table_fields, table_data):
 
 
 def get_sql_data_from_file(filename, delimiter='\t'):
+    """
+    Gets sql data from a txt or csv file
+    :param filename: file name
+    :param delimiter: delimiter that separates values in file
+    :return: tuple containing title of table, fields for the table, and data to write into table
+    """
     with open(filename, 'r') as fin:
         # Most files we will be working with will be tsv
         csv_reader = csv.DictReader(fin, delimiter=delimiter)
@@ -110,6 +116,13 @@ def med_admin_table_info(conn):
 
 
 def get_data_from_sql_table(conn, sql):
+    """
+    Executes a given sql command on a given database
+    :param conn: connection to database to execute command
+    :param sql: sql to execute
+    :return: iterer of tuple containing the data return from command
+    """
+
     cur = conn.cursor()
     cur.execute(sql)
     return cur.fetchall()
